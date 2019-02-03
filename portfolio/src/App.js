@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import Links from './Links';
 import profile from './assets/profile.png';
+import Title from './Title';
 
 class App extends Component{
     state = { displayBio: false };
@@ -30,12 +31,13 @@ class App extends Component{
                 <div className='presentation'>
                     <img src={profile} alt='profile' className='profile'/>
                     <h1>Hello</h1>
-                    <p>My Name is Jorge. I'm a software Engineer.</p>
+                    <p>My Name is Jorge.</p>
+                    { this.state.displayBio ? <Title /> : null }
                     <p>I'm always looking forward to working on meaningful projects.</p>
                     {
                         this.state.displayBio ? ( 
                             <div className='presentation'>
-                                <p>I live in Tepic, and i code every day.</p>
+                                <p>I live in Tepic, and i code almostevery day.</p>
                                 <p>My favourite language right now is JavaScript, and i think React.js is awesome.</p>
                                 <p>Besides coding, i love playing Age of Empires 2 at a professional level and watch tv series. </p>
                                 <button onClick={this.toogleDisplayBio}>Show Less</button>
