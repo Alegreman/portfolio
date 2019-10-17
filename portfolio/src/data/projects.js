@@ -3,27 +3,36 @@ import jlogo from '../assets/jlogo.png';
 import rlogo from '../assets/rlogo.png';
 
 const PROJECTS = [
-    {
-        id: 1,
-        title: 'Example React Application',
-        description: 'A React App that i built, involving JS and core web dev concepts',
-        link: 'https://github.com/Alegreman/portfolio',
-        image: jlogo
-    },
-    {
-        id: 2,
-        title: 'Example Ruby on Rails API Application',
-        description: 'A React App that i built, involving JS and core web dev concepts',
-        link: 'https://github.com/Alegreman/appRorBasica',
-        image: rlogo
-    },
-    {
-        id: 3,
-        title: 'Example C# Application',
-        description: 'A C# App built in a team, i was involved with a pair of functionalities',
-        link: 'https://github.com/Brianacl/AppGestionCurriculums',
-        image: clogo
-    }
+  {
+    id: 1,
+    title: 'Portfolio',
+    description:
+      'A React App that i built, involving JS and core web dev concepts',
+    link: 'https://github.com/Alegreman/portfolio',
+    image: jlogo,
+    liveLink: 'https://github.com/Alegreman',
+    technologies: 'REACT | STYLED COMPONENTS'
+  },
+  {
+    id: 2,
+    title: 'Github Finder',
+    description:
+      'A React App that i built, involving JS and core web dev concepts',
+    link: 'https://github.com/Alegreman/portfolio',
+    image: jlogo,
+    liveLink: 'https://github.com/Alegreman',
+    technologies: ''
+  },
+  {
+    id: 3,
+    title: 'Music App',
+    description:
+      'A React App that i built, involving JS and core web dev concepts',
+    link: 'https://github.com/Alegreman/portfolio',
+    image: jlogo,
+    liveLink: 'https://github.com/Alegreman',
+    technologies: ''
+  }
 ];
 
 export default PROJECTS;

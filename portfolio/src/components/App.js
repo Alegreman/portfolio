@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Projects from './Projects';
 import Links from './Links';
-import profile from '../assets/profile.png';
 import Title from './Title';
 
 class App extends Component {
@@ -28,7 +27,6 @@ class App extends Component {
     return (
       <div>
         <div className='presentation'>
-          <img src={profile} alt='profile' className='profile' />
           <h1>Hello</h1>
           <p>My Name is Jorge.</p>
           <Title />
@@ -52,9 +50,7 @@ class App extends Component {
             </div>
           )}
         </div>
-        <hr />
         <Projects />
-        <hr />
         <Links />
       </div>
     );
