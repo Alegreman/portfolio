@@ -36,6 +36,10 @@ const Tech = styled.p`
   font-weight: 800;
 `;
 
+const Link = styled.a`
+  text-decoration: none;
+`;
+
 const Project = props => {
   const {
     title,
@@ -51,10 +55,10 @@ const Project = props => {
       <img src={image} alt='profile' style={{ width: 200, height: 120 }} />
       <p>{description}</p>
       <Button>
-        <a href={link}>SOURCE</a>
+        <Link href={link}>SOURCE</Link>
       </Button>
       <Button>
-        <a href={liveLink}>DEMO</a>
+        <Link href={liveLink}>DEMO</Link>
       </Button>
     </Projectt>
   );

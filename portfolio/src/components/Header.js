@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 import logo from '../assets/any-solvent.svg';
 import styled from 'styled-components';
+import About from './About';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
 
 const Logo = styled.a`
   padding: 0.1rem;
@@ -26,14 +29,17 @@ const Header = ({ children }) => {
           <A src={logo} alt='logo' className='logo' />
         </Logo>
         <h3 style={style}>
-          <Link to='/'>ABOUT ME</Link>
+          <Link to='/about'>ABOUT ME</Link>
         </h3>
+        <Route path='/about' component={About} exact></Route>
         <h3 style={style}>
-          <Link to='/jokes'>PORTFOLIO</Link>
+          <Link to='/portfolio'>PORTFOLIO</Link>
         </h3>
+        <Route path='/portfolio' component={Portfolio} exact></Route>
         <h3 style={style}>
-          <Link to='/jokes'>CONTACT</Link>
+          <Link to='/contact'>CONTACT</Link>
         </h3>
+        <Route path='/contact' component={Contact} exact></Route>
       </Logo>
       {children}
     </div>

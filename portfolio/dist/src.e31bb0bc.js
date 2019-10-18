@@ -28175,6 +28175,16 @@ var _styledComponents = _interopRequireDefault(require("styled-components"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject6() {
+  var data = _taggedTemplateLiteral(["\n  text-decoration: none;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject5() {
   var data = _taggedTemplateLiteral(["\n  font-family: RobotoCondensed;\n  src: url(assets/RobotoCondensed-Light.ttf);\n  font-weight: 800;\n"]);
 
@@ -28241,6 +28251,8 @@ var Button = _styledComponents.default.button(_templateObject4(), function (prop
 
 var Tech = _styledComponents.default.p(_templateObject5());
 
+var Link = _styledComponents.default.a(_templateObject6());
+
 var Project = function Project(props) {
   var _props$project = props.project,
       title = _props$project.title,
@@ -28256,9 +28268,9 @@ var Project = function Project(props) {
       width: 200,
       height: 120
     }
-  }), _react.default.createElement("p", null, description), _react.default.createElement(Button, null, _react.default.createElement("a", {
+  }), _react.default.createElement("p", null, description), _react.default.createElement(Button, null, _react.default.createElement(Link, {
     href: link
-  }, "SOURCE")), _react.default.createElement(Button, null, _react.default.createElement("a", {
+  }, "SOURCE")), _react.default.createElement(Button, null, _react.default.createElement(Link, {
     href: liveLink
   }, "DEMO")));
 };
@@ -28486,7 +28498,65 @@ function (_Component) {
 
 var _default = Title;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"components/About.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  font-family: EconomicaBold;\n  font-size: 2rem;\n  font-weight: bold;\n  padding: auto 3rem;\n  text-align: justify;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  columns: 2;\n  text-align: left;\n  align-items: center;\n  width: 70%;\n  margin: auto;\n  font-weight: bold;\n  font-family: RobotoCondensed;\n  font-size: 1rem;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  margin: 1rem 2rem;\n  padding: 2rem;\n  line-height: 3rem;\n  margin: auto 10rem;\n  font-family: RobotoCondensed;\n  text-align: justify;\n  font-size: 1rem;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var Intro = _styledComponents.default.p(_templateObject());
+
+var List = _styledComponents.default.ul(_templateObject2());
+
+var Title = _styledComponents.default.p(_templateObject3());
+
+var About = function About() {
+  return _react.default.createElement("div", null, _react.default.createElement(Intro, null, "I'm Jorge Alegr\xEDa, I have a Bachelor in Science Degree in Computer Systems Engineering and lately I'm been focusing in Front-end Development, I'm from M\xE9xico. A couple of months before I graduated from university, I started working as a developer creating mobile applications with Ionic 3 and websites with Angular, While these technologies were good, I felt they were not for me, so I started enrolling in a couple of courses to learn React.JS."), _react.default.createElement(Intro, null, "I have used Javascript for almost 2 years now, Making school projects and excercises for a couple of semesters learning fundamentals and advanced concepts.", _react.default.createElement("br", null), " Related to online courses I have learn from Brad Traversy in his React Front To Back 2019 course, David Joseph Katz's course named React JS Web Development - The Essentials Bootcamp, Stephen Grider's course named Node with React: Fullstack Web Development and a lot of youtube videos about React.js, also I'm currently reading the \"You Don't Know JS\" series from Kyle Simpson."), _react.default.createElement(Intro, null, "So to show off my skills I did some personal projects with the knowledge gathered from the courses these projects are listed below."), _react.default.createElement(Intro, null, _react.default.createElement(Title, null, "My stack of languages/technologies is:"), _react.default.createElement(List, null, _react.default.createElement("li", null, "HTML5"), _react.default.createElement("li", null, "CSS3"), _react.default.createElement("li", null, "JAVASCRIPT"), _react.default.createElement("li", null, "SASS"), _react.default.createElement("li", null, "WEBPACK"), _react.default.createElement("li", null, "REACTJS"), _react.default.createElement("li", null, "REDUX"), _react.default.createElement("li", null, "STYLED COMPONENTS"), _react.default.createElement("li", null, "MongoDB"))));
+};
+
+var _default = About;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28501,6 +28571,8 @@ var _Projects = _interopRequireDefault(require("./Projects"));
 var _Links = _interopRequireDefault(require("./Links"));
 
 var _Title = _interopRequireDefault(require("./Title"));
+
+var _About = _interopRequireDefault(require("./About"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28559,9 +28631,6 @@ function (_Component) {
 
   _createClass(App, [{
     key: "render",
-    //toogleDisplayBio(){
-    //    this.setState({ displayBio: !this.state.displayBio });
-    //}
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "presentation"
@@ -28571,7 +28640,7 @@ function (_Component) {
         onClick: this.toogleDisplayBio
       }, "Show Less")) : _react.default.createElement("div", null, _react.default.createElement("button", {
         onClick: this.toogleDisplayBio
-      }, "Read More"))), _react.default.createElement(_Projects.default, null), _react.default.createElement(_Links.default, null));
+      }, "Read More"))), _react.default.createElement(_About.default, null), _react.default.createElement(_Projects.default, null), _react.default.createElement(_Links.default, null));
     }
   }]);
 
@@ -28580,7 +28649,7 @@ function (_Component) {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Projects":"components/Projects.js","./Links":"components/Links.js","./Title":"components/Title.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Projects":"components/Projects.js","./Links":"components/Links.js","./Title":"components/Title.js","./About":"components/About.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -32558,6 +32627,10 @@ var _withRouter2 = _interopRequireDefault(require("./withRouter"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 },{"./BrowserRouter":"../node_modules/react-router-dom/es/BrowserRouter.js","./HashRouter":"../node_modules/react-router-dom/es/HashRouter.js","./Link":"../node_modules/react-router-dom/es/Link.js","./MemoryRouter":"../node_modules/react-router-dom/es/MemoryRouter.js","./NavLink":"../node_modules/react-router-dom/es/NavLink.js","./Prompt":"../node_modules/react-router-dom/es/Prompt.js","./Redirect":"../node_modules/react-router-dom/es/Redirect.js","./Route":"../node_modules/react-router-dom/es/Route.js","./Router":"../node_modules/react-router-dom/es/Router.js","./StaticRouter":"../node_modules/react-router-dom/es/StaticRouter.js","./Switch":"../node_modules/react-router-dom/es/Switch.js","./generatePath":"../node_modules/react-router-dom/es/generatePath.js","./matchPath":"../node_modules/react-router-dom/es/matchPath.js","./withRouter":"../node_modules/react-router-dom/es/withRouter.js"}],"assets/any-solvent.svg":[function(require,module,exports) {
 module.exports = "/any-solvent.5b9a13ff.svg";
+},{}],"components/Portfolio.js":[function(require,module,exports) {
+
+},{}],"components/Contact.js":[function(require,module,exports) {
+
 },{}],"components/Header.js":[function(require,module,exports) {
 "use strict";
 
@@ -32573,6 +32646,12 @@ var _reactRouterDom = require("react-router-dom");
 var _anySolvent = _interopRequireDefault(require("../assets/any-solvent.svg"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
+
+var _About = _interopRequireDefault(require("./About"));
+
+var _Portfolio = _interopRequireDefault(require("./Portfolio"));
+
+var _Contact = _interopRequireDefault(require("./Contact"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32618,21 +32697,33 @@ var Header = function Header(_ref) {
   })), _react.default.createElement("h3", {
     style: style
   }, _react.default.createElement(_reactRouterDom.Link, {
-    to: "/"
-  }, "ABOUT ME")), _react.default.createElement("h3", {
+    to: "/about"
+  }, "ABOUT ME")), _react.default.createElement(_reactRouterDom.Route, {
+    path: "/about",
+    component: _About.default,
+    exact: true
+  }), _react.default.createElement("h3", {
     style: style
   }, _react.default.createElement(_reactRouterDom.Link, {
-    to: "/jokes"
-  }, "PORTFOLIO")), _react.default.createElement("h3", {
+    to: "/portfolio"
+  }, "PORTFOLIO")), _react.default.createElement(_reactRouterDom.Route, {
+    path: "/portfolio",
+    component: _Portfolio.default,
+    exact: true
+  }), _react.default.createElement("h3", {
     style: style
   }, _react.default.createElement(_reactRouterDom.Link, {
-    to: "/jokes"
-  }, "CONTACT"))), children);
+    to: "/contact"
+  }, "CONTACT")), _react.default.createElement(_reactRouterDom.Route, {
+    path: "/contact",
+    component: _Contact.default,
+    exact: true
+  })), children);
 };
 
 var _default = Header;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","../assets/any-solvent.svg":"assets/any-solvent.svg","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js"}],"../node_modules/history/PathUtils.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","../assets/any-solvent.svg":"assets/any-solvent.svg","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./About":"components/About.js","./Portfolio":"components/Portfolio.js","./Contact":"components/Contact.js"}],"../node_modules/history/PathUtils.js":[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -33403,7 +33494,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36669" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35685" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
