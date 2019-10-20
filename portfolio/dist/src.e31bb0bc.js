@@ -28721,7 +28721,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./assets/RobotoCondensed-Light.ttf":[["RobotoCondensed-Light.b4ec25b3.ttf","assets/RobotoCondensed-Light.ttf"],"assets/RobotoCondensed-Light.ttf"],"./assets/Economica-Bold.ttf":[["Economica-Bold.42614a98.ttf","assets/Economica-Bold.ttf"],"assets/Economica-Bold.ttf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/warning/warning.js":[function(require,module,exports) {
+},{"./assets\\RobotoCondensed-Light.ttf":[["RobotoCondensed-Light.b4ec25b3.ttf","assets/RobotoCondensed-Light.ttf"],"assets/RobotoCondensed-Light.ttf"],"./assets\\Economica-Bold.ttf":[["Economica-Bold.42614a98.ttf","assets/Economica-Bold.ttf"],"assets/Economica-Bold.ttf"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/warning/warning.js":[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
  *
@@ -32625,8 +32625,8 @@ var _matchPath2 = _interopRequireDefault(require("./matchPath"));
 var _withRouter2 = _interopRequireDefault(require("./withRouter"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./BrowserRouter":"../node_modules/react-router-dom/es/BrowserRouter.js","./HashRouter":"../node_modules/react-router-dom/es/HashRouter.js","./Link":"../node_modules/react-router-dom/es/Link.js","./MemoryRouter":"../node_modules/react-router-dom/es/MemoryRouter.js","./NavLink":"../node_modules/react-router-dom/es/NavLink.js","./Prompt":"../node_modules/react-router-dom/es/Prompt.js","./Redirect":"../node_modules/react-router-dom/es/Redirect.js","./Route":"../node_modules/react-router-dom/es/Route.js","./Router":"../node_modules/react-router-dom/es/Router.js","./StaticRouter":"../node_modules/react-router-dom/es/StaticRouter.js","./Switch":"../node_modules/react-router-dom/es/Switch.js","./generatePath":"../node_modules/react-router-dom/es/generatePath.js","./matchPath":"../node_modules/react-router-dom/es/matchPath.js","./withRouter":"../node_modules/react-router-dom/es/withRouter.js"}],"assets/any-solvent.svg":[function(require,module,exports) {
-module.exports = "/any-solvent.5b9a13ff.svg";
+},{"./BrowserRouter":"../node_modules/react-router-dom/es/BrowserRouter.js","./HashRouter":"../node_modules/react-router-dom/es/HashRouter.js","./Link":"../node_modules/react-router-dom/es/Link.js","./MemoryRouter":"../node_modules/react-router-dom/es/MemoryRouter.js","./NavLink":"../node_modules/react-router-dom/es/NavLink.js","./Prompt":"../node_modules/react-router-dom/es/Prompt.js","./Redirect":"../node_modules/react-router-dom/es/Redirect.js","./Route":"../node_modules/react-router-dom/es/Route.js","./Router":"../node_modules/react-router-dom/es/Router.js","./StaticRouter":"../node_modules/react-router-dom/es/StaticRouter.js","./Switch":"../node_modules/react-router-dom/es/Switch.js","./generatePath":"../node_modules/react-router-dom/es/generatePath.js","./matchPath":"../node_modules/react-router-dom/es/matchPath.js","./withRouter":"../node_modules/react-router-dom/es/withRouter.js"}],"assets/full_logo.png":[function(require,module,exports) {
+module.exports = "/full_logo.40aa4984.png";
 },{}],"components/Portfolio.js":[function(require,module,exports) {
 
 },{}],"components/Contact.js":[function(require,module,exports) {
@@ -32643,7 +32643,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _anySolvent = _interopRequireDefault(require("../assets/any-solvent.svg"));
+var _full_logo = _interopRequireDefault(require("../assets/full_logo.png"));
 
 var _styledComponents = _interopRequireDefault(require("styled-components"));
 
@@ -32656,7 +32656,7 @@ var _Contact = _interopRequireDefault(require("./Contact"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  left: 0px;\n  width: 2.5rem;\n  height: 2.5rem;\n  position: relative;\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: 15rem;\n  height: 100px;\n  align-items: right;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -32691,7 +32691,7 @@ var Header = function Header(_ref) {
   return _react.default.createElement("div", null, _react.default.createElement(Logo, null, _react.default.createElement(Logo, {
     href: "/"
   }, _react.default.createElement(A, {
-    src: _anySolvent.default,
+    src: _full_logo.default,
     alt: "logo",
     className: "logo"
   })), _react.default.createElement("h3", {
@@ -32723,7 +32723,7 @@ var Header = function Header(_ref) {
 
 var _default = Header;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","../assets/any-solvent.svg":"assets/any-solvent.svg","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./About":"components/About.js","./Portfolio":"components/Portfolio.js","./Contact":"components/Contact.js"}],"../node_modules/history/PathUtils.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","../assets/full_logo.png":"assets/full_logo.png","styled-components":"../node_modules/styled-components/dist/styled-components.browser.esm.js","./About":"components/About.js","./Portfolio":"components/Portfolio.js","./Contact":"components/Contact.js"}],"../node_modules/history/PathUtils.js":[function(require,module,exports) {
 'use strict';
 
 exports.__esModule = true;
@@ -33494,7 +33494,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35685" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65067" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
-import logo from '../assets/any-solvent.svg';
+import logo from '../assets/full_logo.png';
 import styled from 'styled-components';
 import About from './About';
 import Portfolio from './Portfolio';
@@ -10,10 +10,9 @@ const Logo = styled.a`
   padding: 0.1rem;
 `;
 const A = styled.img`
-  left: 0px;
-  width: 2.5rem;
-  height: 2.5rem;
-  position: relative;
+  width: 15rem;
+  height: 100px;
+  align-items: right;
 `;
 
 const Header = ({ children }) => {
