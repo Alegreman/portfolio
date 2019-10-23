@@ -1,6 +1,4 @@
-import clogo from '../assets/clogo.png';
 import jlogo from '../assets/jlogo.png';
-import rlogo from '../assets/rlogo.png';
 
 const PROJECTS = [
   {
