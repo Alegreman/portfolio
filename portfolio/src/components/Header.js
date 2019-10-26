@@ -1,47 +1,59 @@
 import React from 'react';
-import { Link, Route } from 'react-router-dom';
 import logo from '../assets/full_logo.png';
 import styled from 'styled-components';
-import About from './About';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
 
-const Logo = styled.a`
-  padding: 0.1rem;
-`;
-const A = styled.img`
-  width: 15rem;
-  height: 100px;
-  align-items: right;
+const Img = styled.img`
+  width: 100%;
+  float: left;
 `;
 
-const Header = ({ children }) => {
-  const style = {
-    display: 'inline-block',
-    margin: 10,
-    marginBottom: 30
-  };
+const ImgContainer = styled.a`
+  width: 30%;
+`;
+const Nav = styled.div`
+  display: inline-flex;
+  float: right;
+`;
+
+const List = styled.ul`
+  display: inline-flex;
+  list-style: none;
+  margin-right: 0;
+`;
+
+const ListItem = styled.li`
+  padding: 20px 10px;
+  &:hover {
+    background-color: palevioletred;
+    color: white;
+  }
+`;
+
+const Head = styled.nav`
+  width: 100%;
+  float: right;
+`;
+
+const Header = () => {
   return (
-    <div>
-      <Logo>
-        <Logo href='/'>
-          <A src={logo} alt='logo' className='logo' />
-        </Logo>
-        <h3 style={style}>
-          <Link to='/about'>ABOUT ME</Link>
-        </h3>
-        <Route path='/about' component={About} exact></Route>
-        <h3 style={style}>
-          <Link to='/portfolio'>PORTFOLIO</Link>
-        </h3>
-        <Route path='/portfolio' component={Portfolio} exact></Route>
-        <h3 style={style}>
-          <Link to='/contact'>CONTACT</Link>
-        </h3>
-        <Route path='/contact' component={Contact} exact></Route>
-      </Logo>
-      {children}
-    </div>
+    <Head>
+      <Nav>
+        <ImgContainer href='/'>
+          <Img src={logo} alt='logo' />
+        </ImgContainer>
+        <List>
+          <ListItem>
+            <a href=''>About</a>
+          </ListItem>
+          <ListItem>
+            <a href=''>Portfolio</a>
+          </ListItem>
+          <ListItem>
+            <a href=''>Contact</a>
+          </ListItem>
+        </List>
+      </Nav>
+    </Head>
   );
 };
 

@@ -51,9 +51,10 @@ const Project = props => {
   } = props.project;
   return (
     <Projectt>
-      <h3>{title}</h3>
+      <Title>{title}</Title>
       <img src={image} alt='profile' style={{ width: 200, height: 120 }} />
-      <p>{description}</p>
+      <Description>{description}</Description>
+      <Tech>{technologies}</Tech>
       <Button>
         <Link href={link}>SOURCE</Link>
       </Button>

@@ -19,7 +19,7 @@ const PROJECTS = [
     link: 'https://github.com/Alegreman/portfolio',
     image: jlogo,
     liveLink: 'https://github.com/Alegreman',
-    technologies: ''
+    technologies: 'REACT '
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const PROJECTS = [
     link: 'https://github.com/Alegreman/portfolio',
     image: jlogo,
     liveLink: 'https://github.com/Alegreman',
-    technologies: ''
+    technologies: 'REACT'
   }
 ];
 

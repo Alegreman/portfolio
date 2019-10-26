@@ -19,6 +19,7 @@ const Link = props => {
 const Links = () => (
   <div className='media'>
     <h2>Contact Me</h2>
+
     <div>
       {LINKS.map(LINK => (
         <Link key={LINK.id} link={LINK} />
