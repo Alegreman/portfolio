@@ -24,7 +24,7 @@ class Title extends Component {
       const titleIndex = (this.state.titleIndex + 1) % TITLES.length;
 
       this.setState({ titleIndex, fadeIn: true });
-      this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
+      this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 1000);
     }, 4000);
   };
   render() {

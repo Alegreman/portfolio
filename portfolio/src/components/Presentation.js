@@ -2,17 +2,20 @@ import React, { Component } from 'react';
 import Title from './Title';
 import styled from 'styled-components';
 
+import logo from '../assets/logo.png';
+import cv from '../assets/cv.pdf';
+
 const Intro = styled.p`
   margin: auto 12rem;
   font-family: RobotoCondensed;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 2rem;
   position: center;
 `;
 
 const Name = styled.h1`
   font-family: EconomicaBold;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   padding: auto 3rem;
   text-align: justify;
@@ -20,21 +23,41 @@ const Name = styled.h1`
 
 const Button = styled.button`
   cursor: pointer;
-  background: transparent;
-  font-size: 1rem;
+  background: #003f5c;
+  font-size: 2rem;
   border-radius: 3px;
-  color: palevioletred;
-  border: 2px solid palevioletred;
+  color: white;
+  border: 2px solid #003f5c;
   margin: 0 1em;
   padding: 0.25em 1em;
   transition: 0.5s all ease-out;
   &:hover {
-    background-color: palevioletred;
+    background-color: #ff6361;
     color: white;
+    border: 2px solid #ff6361;
   }
 `;
 const A = styled.a`
+  color: white;
   text-decoration: none;
+`;
+
+const Container = styled.div`
+  height: 100%;
+`;
+
+const Foot = styled.div`
+  left: 0;
+  bottom: 0;
+  flex-shrink: 0;
+  margin-top: 5em;
+  position: fixed;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+  & img {
+    filter: drop-shadow(0 0 5px #000);
+  }
 `;
 
 class Presentation extends Component {
@@ -45,7 +68,7 @@ class Presentation extends Component {
   };
   render() {
     return (
-      <div>
+      <Container>
         <Intro>
           <Name>Hello</Name>
           <p>My Name is Jorge.</p>
@@ -53,16 +76,28 @@ class Presentation extends Component {
           <p>I'm always looking forward to working on meaningful projects.</p>
         </Intro>
         <Button>
-          <A href='../assets/CV(en).pdf' target='_blank'>
+          <A href={cv} target='_blank'>
             CV
           </A>
         </Button>
         <Button>
-          <A href='https://github.com/Alegreman/'>Github</A>
+          <A href='https://github.com/Alegreman/' target='_blank'>
+            Github
+          </A>
         </Button>
-      </div>
+        <Footer />
+      </Container>
     );
   }
 }
+
+const Footer = () => {
+  return (
+    <Foot>
+      <img src={logo} alt='logo' />
+      <p>COPYRIGHT © 2019, ALEGRÍA</p>
+    </Foot>
+  );
+};
 
 export default Presentation;

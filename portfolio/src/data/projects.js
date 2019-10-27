@@ -1,35 +1,25 @@
-import jlogo from '../assets/jlogo.png';
+import portfolioImage from '../assets/portfolio.png';
+import githubImage from '../assets/github-finder.png';
 
 const PROJECTS = [
   {
     id: 1,
     title: 'Portfolio',
     description:
-      'A React App that i built, involving JS and core web dev concepts',
+      'Portfolio website to display a little info about me, my background, contact and some projects',
     link: 'https://github.com/Alegreman/portfolio',
-    image: jlogo,
-    liveLink: 'https://github.com/Alegreman',
+    image: portfolioImage,
+    liveLink: 'http://alegriadev.com',
     technologies: 'REACT | STYLED COMPONENTS'
   },
   {
     id: 2,
     title: 'Github Finder',
-    description:
-      'A React App that i built, involving JS and core web dev concepts',
-    link: 'https://github.com/Alegreman/portfolio',
-    image: jlogo,
-    liveLink: 'https://github.com/Alegreman',
-    technologies: 'REACT '
-  },
-  {
-    id: 3,
-    title: 'Music App',
-    description:
-      'A React App that i built, involving JS and core web dev concepts',
-    link: 'https://github.com/Alegreman/portfolio',
-    image: jlogo,
-    liveLink: 'https://github.com/Alegreman',
-    technologies: 'REACT'
+    description: 'Website to search github profiles and consult info',
+    link: 'https://github.com/Alegreman/github-finder',
+    image: githubImage,
+    liveLink: 'http://github.alegriadev.com',
+    technologies: 'REACT | STYLED COMPONENTS | REDUCER'
   }
 ];
 

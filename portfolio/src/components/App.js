@@ -2,19 +2,53 @@ import React, { Component } from 'react';
 import Projects from './Projects';
 import Links from './Links';
 import About from './About';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Presentation from './Presentation';
-import Header from './Header';
+import Navbar from './Toolbar/Navbar';
+import SideDrawer from '../components/SideDrawer/SideDrawer';
+import Backdrop from '../components/Backdrop/Backdrop';
 
 class App extends Component {
+  state = {
+    sideDrawerOpen: false
+  };
+
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false });
+  };
+
   render() {
+    let sideDrawer;
+    let backdrop;
+
+    if (this.state.sideDrawerOpen) {
+      sideDrawer = <SideDrawer />;
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
+    }
+
     return (
-      <div>
-        <Header />
-        <Presentation />
-        <About />
-        <Projects />
-        <Links />
-      </div>
+      <Router>
+        <div style={{ height: '100%' }}>
+          <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
+          {sideDrawer}
+          {backdrop}
+          <main style={{ marginTop: '64px' }}>
+            <Switch>
+              <Route path='/' exact component={Presentation} />
+              <Route path='/about' component={About} />
+              <Route path='/portfolio' component={Projects} />
+              <Route path='/contact' component={Links} />
+            </Switch>
+          </main>
+        </div>
+      </Router>
     );
   }
 }
